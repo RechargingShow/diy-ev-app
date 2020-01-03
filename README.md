@@ -17,7 +17,7 @@ I know the code is not the prettiest code in the world. This was a hobby project
 In theory you can parse any data that the Torque app can parse. If you want to see all currently available Torque app data check out [TorqueCSVSheet](https://github.com/JejuSoul/OBD-PIDs-for-HKMC-EVs/tree/master/Hyundai%20Kona%20EV%20%26%20Kia%20Niro%20EV) .
 
 ## How can you make it run?
-These steps are quit technical. Programming is required in order to make this work.
+These steps are quite technical. Programming is required in order to make this work.
 1. Download the Android SDK: https://developer.android.com/studio . You need this to install the app on your telephone.
 2. Download the repository and open the code with the Android SDK.
 3. Enable your phone to accept installation from unknown sources.
