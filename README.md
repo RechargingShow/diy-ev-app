@@ -15,3 +15,14 @@ In my setup I parse the binary data I receive from the ODB2 dongle on a webserve
 I know the code is not the prettiest code in the world. This was a hobby project of mine and my mission was to make it work, not make it pretty. All this code is based on the [EVNotify project](https://github.com/EVNotify/EVNotify/blob/master/app/www/components/cars/KONA_EV.vue) . So for reference you can also look at this project. 
 
 In theory you can parse any data that the Torque app can parse. If you want to see all currently available Torque app data check out [TorqueCSVSheet](https://github.com/JejuSoul/OBD-PIDs-for-HKMC-EVs/tree/master/Hyundai%20Kona%20EV%20%26%20Kia%20Niro%20EV) .
+
+## How can you make it run?
+These steps are quit technical. Programming is required in order to make this work.
+1. Download the Android SDK: https://developer.android.com/studio . You need this to install the app on your telephone.
+2. Download the repository and open the code with the Android SDK.
+3. Enable your phone to accept installation from unknown sources.
+
+### How is my set up
+In the package "org.open.ev.app.odb2parsers" are the parsers that parse the binary data to readable data. In my case the app reads all the binary data and send this to a webserver. This means I written java code that can run on the server and accept the JSON data that contains the binary data from the ODB2 dongle. This data is being parsed and put in a database. Then I made a front-end that reads this database and shows me all the data. 
+
+It is also possible to integrate the ODB2 parsers in the android app itself. Either way, programming is required to make this work. My initial thought behind this is that I give you the freedom to implement this in a way you want. Do you want to use php for your backend/front-end, feel free. 
