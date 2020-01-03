@@ -22,7 +22,7 @@ These steps are quit technical. Programming is required in order to make this wo
 2. Download the repository and open the code with the Android SDK.
 3. Enable your phone to accept installation from unknown sources.
 4. Make the nessacary changes in the app. Change the GPSPostAsyncTask and ODB2PostAsyncTask.
-5. Sorry you have to make a back-end/front-end yourself that accepts the JSON that is being send by the app.
+5. Sorry you have to make a back-end/front-end yourself that accepts the JSON that is being send by the app. In this you have to integrate the odb2 parsers. 
 
 ### How is my set up
 In the package "org.open.ev.app.odb2parsers" are the parsers that parse the binary data to readable data. In my case the app reads all the binary data and send this to a webserver. This means I written java code that can run on the server and accept the JSON data that contains the binary data from the ODB2 dongle. This data is being parsed and put in a database. Then I made a front-end that reads this database and shows me all the data. 
